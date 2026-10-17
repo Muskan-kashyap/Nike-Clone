@@ -1,6 +1,6 @@
 export const data = [
     {
-        title: "help",
+        title: "Help",
         href: "/help"
     },
     {
@@ -8,7 +8,7 @@ export const data = [
         href: "/sign-up"
     },
     {
-        title: "log in",
+        title: "Log in",
         href: "/log-in"
     }
 ]

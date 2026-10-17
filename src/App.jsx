@@ -18,10 +18,10 @@ function App() {
         <>
             <Header/>
             <Hero/>
-            {/* <Featured/> */}
-            {/* <ShopSlider/> */}
-            {/* <Spotlight/> */}
-            {/* <Footer/> */}
+            <Featured/>
+            <ShopSlider/>
+            <Spotlight/>
+            <Footer/>
         </>
     )
 }
