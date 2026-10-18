@@ -6,6 +6,7 @@ import {Footer} from "./components/Footer.jsx";
 import {ShopSlider} from "./components/ShopSlider.jsx";
 import {Trending} from "./components/Trending.jsx";
 import {FreshDrops} from "./components/FreshDrops.jsx";
+import "./App.css";
 
 
 
