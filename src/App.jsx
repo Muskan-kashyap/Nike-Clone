@@ -4,6 +4,8 @@ import {Featured} from "./componets/Featured.jsx";
 import {Spotlight} from "./componets/Spotlight.jsx";
 import {Footer} from "./componets/Footer.jsx";
 import {ShopSlider} from "./componets/ShopSlider.jsx";
+import {Trending} from "./componets/Trending.jsx";
+import {FreshDrops} from "./componets/FreshDrops.jsx";
 
 
 
@@ -19,9 +21,11 @@ function App() {
             <Header/>
             <Hero/>
             <Featured/>
+            <Trending/>
+            <FreshDrops/>
             <ShopSlider/>
             <Spotlight/>
-            <Footer/>
+            <Footer/>                                    
         </>
     )
 }

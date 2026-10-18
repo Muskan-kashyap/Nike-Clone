@@ -1,64 +1,56 @@
 import { css } from "@emotion/react";
 
+// Title, subtitle and "Shop" button are already part of these images,
+// so we only render the images themselves at their natural ratio.
 const featuredImg = [
-    {title: "/featured/f1.avif"},
-    {title: "/featured/f2.avif"},
-    {title: "/featured/f3.avif"},
-    {title: "/featured/f4.avif"},
+    {title: "/featured/f1.avif", alt: "Level Up for After Dark Tour Training"},
+    {title: "/featured/f2.avif", alt: "Air Jordan 5 'Halloween'"},
 ]
 
 export const Featured = () => {
     return (
         <section
             css={css`
-        padding: 80px 0;
-      `}
+                padding: 80px 48px;
+            `}
         >
             <h3
                 css={css`
-          padding: 0 48px;
-        `}
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #111111;
+                `}
             >
                 Featured
             </h3>
 
             <div
                 css={css`
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          padding: 24px 0px;
-          max-width: 100%;
-          overflow: hidden;
-        `}
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-top: 36px;
+                `}
             >
-
-                {
-                    featuredImg.map((item, idx)=>(
-                        <>
-                            <a
-                                key={idx}
-                                href="#"
-                                css={css`
-                          display: block;
-                          width: 100%;
-                          height: 100vh;
-                          overflow: hidden;
-            `}
-                            >
-                                <img
-                                    src={item.title}
-                                    css={css`
+                {featuredImg.map((item, idx) => (
+                    <a
+                        key={idx}
+                        href="#"
+                        css={css`
+                            display: block;
+                            overflow: hidden;
+                        `}
+                    >
+                        <img
+                            src={item.title}
+                            alt={item.alt}
+                            css={css`
                                 width: 100%;
-                                height: 100%;
-                                object-fit: cover;
+                                height: auto;
                                 display: block;
-                              `}
-                                />
-                            </a>
-                        </>
-                    ))
-                }
-
+                            `}
+                        />
+                    </a>
+                ))}
             </div>
         </section>
     );
