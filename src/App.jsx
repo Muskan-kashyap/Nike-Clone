@@ -1,11 +1,11 @@
-import {Header} from "./componets/Header.jsx";
-import {Hero} from "./componets/Hero.jsx";
-import {Featured} from "./componets/Featured.jsx";
-import {Spotlight} from "./componets/Spotlight.jsx";
-import {Footer} from "./componets/Footer.jsx";
-import {ShopSlider} from "./componets/ShopSlider.jsx";
-import {Trending} from "./componets/Trending.jsx";
-import {FreshDrops} from "./componets/FreshDrops.jsx";
+import {Header} from "./components/Header.jsx";
+import {Hero} from "./components/Hero.jsx";
+import {Featured} from "./components/Featured.jsx";
+import {Spotlight} from "./components/Spotlight.jsx";
+import {Footer} from "./components/Footer.jsx";
+import {ShopSlider} from "./components/ShopSlider.jsx";
+import {Trending} from "./components/Trending.jsx";
+import {FreshDrops} from "./components/FreshDrops.jsx";
 
 
 
