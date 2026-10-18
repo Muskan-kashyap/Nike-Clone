@@ -24,7 +24,7 @@ export const Header = () => {
     return (
         <>
 
-            <header>
+            <header css={css`display: contents;`}>
                 <div css={css`
                     display: flex;
                     justify-content: end;
@@ -62,9 +62,10 @@ export const Header = () => {
                     grid-template-columns: repeat(12,minmax(0,1fr));
                     align-items: center;
                     justify-content: space-between;
-                    position: relative;
-                    
-
+                    position: sticky;
+                    top: 0;
+                    z-index: 100;
+                    background-color: white;                    
                 `}>
 
                     <a href="#" css={css`
@@ -122,6 +123,7 @@ export const Header = () => {
                     <div css={css`
                         display: flex;
                         align-items: center;
+                        justify-content: flex-end;
                         grid-column: span 3;
                         gap: 20px;
                     `}>
