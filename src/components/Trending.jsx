@@ -13,6 +13,7 @@ export const Trending = () => {
         <section
             css={css`
                 padding: 40px 48px 80px;
+                @media (max-width: 768px) { padding: 24px 16px 40px; }
             `}
         >
             <h3
@@ -31,6 +32,8 @@ export const Trending = () => {
                     grid-template-columns: repeat(3, 1fr);
                     gap: 22px;
                     margin-top: 36px;
+                    @media (max-width: 1024px) { grid-template-columns: repeat(2, 1fr); }
+                    @media (max-width: 600px) { grid-template-columns: 1fr; }
                 `}
             >
                 {trendingData.map((item, idx) => (

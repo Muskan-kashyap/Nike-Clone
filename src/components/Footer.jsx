@@ -13,10 +13,12 @@ export const Footer = () => {
             <footer css={css`
                 margin: 0 54px;
                 padding: 48px 0px;
+                @media (max-width: 768px) { margin: 0 16px; }
             `}>
                 <div css={css`
                    display: flex;
                     justify-content: start;
+                    flex-wrap: wrap;
                     padding-bottom: 64px;
                     gap: 20px;
                     

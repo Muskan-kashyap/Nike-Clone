@@ -34,7 +34,9 @@ export const Header = () => {
                     color: #111111;
                     padding: .25rem 3rem;
                     background-color: #F5F5F5;
-                    
+                    @media (max-width: 768px) {
+                        display: none;
+                    }    
 
                 `
                 }>
@@ -65,7 +67,12 @@ export const Header = () => {
                     position: sticky;
                     top: 0;
                     z-index: 100;
-                    background-color: white;                    
+                    background-color: white;
+                    @media (max-width: 1024px) {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 16px;
+                    }                    
                 `}>
 
                     <a href="#" css={css`
@@ -90,6 +97,10 @@ export const Header = () => {
                         padding: .25rem 3rem;
                         background-color: white;
                         font-weight: 500;
+
+                        @media (max-width: 1024px) {
+                            display: none;
+                        }    
                         
                     `}>
                         {menuData.map((item, idx) => (
@@ -134,6 +145,9 @@ export const Header = () => {
                             border-radius: 50px;
                             align-items: center;
                             width: 180px;
+                            @media (max-width: 768px) {
+                                display: none;
+                            }    
 
                         `}>
                             <div css={css`

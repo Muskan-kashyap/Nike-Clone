@@ -24,6 +24,7 @@ export const Spotlight = () => {
         <>
             <section css={css`
                 padding: 72px 0;
+                @media (max-width: 768px) { padding: 32px 0; }
             `}>
                 <img src="/banner.avif" css={css`object-fit: cover; width: 100%`}/>
                 <img src="/banner2.avif" css={css`object-fit: cover; width: 100%; margin-top: 80px`}/>
@@ -32,10 +33,12 @@ export const Spotlight = () => {
             <section css={css`
                 margin: 0 80px;
                 padding: 0 10rem;
+                @media (max-width: 1024px) { margin: 0; padding: 0 16px; }
             `}>
                 <div  css={css`
                     display: grid;
                     grid-template-columns: repeat(8, 1fr);
+                    @media (max-width: 768px) { grid-template-columns: repeat(4, 1fr); }
                 `}>
                     {spotlightImages.map((item, idx) => (
                         <img key={idx} src={item.img} css={css`

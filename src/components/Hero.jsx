@@ -16,6 +16,7 @@ export const Hero = () => {
                     width: 100%;
                     color: white;
                     margin-bottom: 40px;
+                    @media (max-width: 768px) { padding; 0 16px; }
                 `}>
                     <h3 css={css`
                         font-size: 14px;
@@ -25,6 +26,7 @@ export const Hero = () => {
                         text-transform: uppercase;
                         font-weight: 900;
                         margin-bottom: 10px;
+                        font-size: clamp(28px, 7vw, 64px);
                     `}>Just do the write work</h1>
                     <p css={css`
                         margin-bottom: 20px;
@@ -57,7 +59,7 @@ export const Hero = () => {
                         `}>Watch</a>
                     </div>
                 </div>
-            <video autoPlay width="100%" loop muted css={css`position: relative; object-fit: cover`}>
+            <video autoPlay width="100%" loop muted css={css`position: relative; object-fit: cover; display:block;`}>
                 <source src="/video/video1.mp4" type="video/mp4" />
             </video>
 

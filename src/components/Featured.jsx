@@ -12,6 +12,7 @@ export const Featured = () => {
         <section
             css={css`
                 padding: 80px 48px;
+                @media (max-width: 768px) { padding: 40px 16px; }
             `}
         >
             <h3
@@ -29,6 +30,7 @@ export const Featured = () => {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     margin-top: 36px;
+                    @media (max-width: 768px) { grid-template-columns: 1fr; }
                 `}
             >
                 {featuredImg.map((item, idx) => (

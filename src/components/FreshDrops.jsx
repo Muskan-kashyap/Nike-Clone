@@ -46,6 +46,7 @@ const arrowStyle = css`
 
     :hover {
         background-color: #e5e5e5;
+        @media (max-width: 768px) { display: none; }
     }
 `
 
@@ -65,6 +66,7 @@ export const FreshDrops = () => {
         <section
             css={css`
                 padding: 40px 48px 80px;
+                @media (max-width: 768px) { padding: 24px 16px 40px; }
             `}
         >
             <h3
@@ -140,6 +142,7 @@ export const FreshDrops = () => {
                                 min-width: 320px;
                                 display: block;
                                 color: #111111;
+                                @media (max-width: 768px) { flex: 0 0 70%; min-width: 240px; }
                             `}
                         >
                             <img
